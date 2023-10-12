@@ -63,3 +63,40 @@ Making sure Index Method works!
 
 --------------------------------------------------------------------------------------------------------------------------
 
+(6:23 PM)
+
+- Models folder > Add > Class > Tire.cs
+- Updated Tire.cs with the following attributes: 
+* Name
+* Type
+* Material 
+* Durability
+* Stock
+* Price
+* Review
+
+- NuGet Package Manager > Package Manager Console (PMC) > Installed Microsoft.EntityFrameworkCore.SqlServer (VERSION 3.0.0)
+- NOT GOING TO CREATE A DATA FOLDER SINCE ITS ALREADY THERE. 
+- I dont need to make any changes to Startup.cs, Startup.ConfigureServices, appsettings.json file because after all the failed attempts I have realized that 
+because I (Included Individual User Accounts authentication and configure for HTTPS.) It already made those changes for me.
+
+BUILD THE PROJECT AND NO COMPILER ERRORS!!
+
+- Controllers folder > Add > New Scaffolded Item > MVC Controller with views, using Entity Framework > Add
+- Model class: Tire(TireHubExpress.Models)
+- Default value for Data Context Class
+
+ERROR!! (The entity type tire requires a primary key to be defined. If you intended to use a keyless entity call 'hasnokey()'. 
+
+15 Mins Later : Realized that I was missing : public int Id { get; set; } in Tire.cs folder!!!!!
+
+- Scaffolded it again, and Successfull!!
+
+TRYING TO FIGURE OUT HOW TO CALL DbClass when there are two!!
+20 Mins later!! Successfull!
+
+Initial Migration: 
+- Add-Migration -Context TireHubExpressContext InitialCreate
+- Update-Database -Context TireHubExpressContext 
+
+TESTING THE APP, SUCCESSFULL!
