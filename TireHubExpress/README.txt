@@ -100,3 +100,10 @@ Initial Migration:
 - Update-Database -Context TireHubExpressContext 
 
 TESTING THE APP, SUCCESSFULL!
+- Commit & Push to GitHub
+
+(7:10 PM)
+
+- Created a SeedData Class in Models Folder
+- Update README.txt
+- Commit & Push to GitHub
