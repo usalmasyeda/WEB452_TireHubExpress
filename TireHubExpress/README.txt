@@ -113,3 +113,5 @@ TESTING THE APP, SUCCESSFULL!
 - Updated Product Information in the SeedData Class
 - Added the seed initializer
 - Updated content in Program.cs based on the product 'Tire'
+
+GETTING ERRORS!!
