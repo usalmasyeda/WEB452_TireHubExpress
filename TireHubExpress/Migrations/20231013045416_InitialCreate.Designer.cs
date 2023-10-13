@@ -9,7 +9,7 @@ using TireHubExpress.Data;
 namespace TireHubExpress.Migrations
 {
     [DbContext(typeof(TireHubExpressContext))]
-    [Migration("20231012230236_InitialCreate")]
+    [Migration("20231013045416_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,8 +42,8 @@ namespace TireHubExpress.Migrations
                     b.Property<int>("Review")
                         .HasColumnType("int");
 
-                    b.Property<string>("Stock")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
 
                     b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");

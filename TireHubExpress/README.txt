@@ -107,3 +107,9 @@ TESTING THE APP, SUCCESSFULL!
 - Created a SeedData Class in Models Folder
 - Update README.txt
 - Commit & Push to GitHub
+
+(11:21 PM)
+
+- Updated Product Information in the SeedData Class
+- Added the seed initializer
+- Updated content in Program.cs based on the product 'Tire'

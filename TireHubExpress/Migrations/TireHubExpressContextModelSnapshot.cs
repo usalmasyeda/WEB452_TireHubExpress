@@ -40,8 +40,8 @@ namespace TireHubExpress.Migrations
                     b.Property<int>("Review")
                         .HasColumnType("int");
 
-                    b.Property<string>("Stock")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
 
                     b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");

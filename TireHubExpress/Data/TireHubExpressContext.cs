@@ -15,6 +15,8 @@ namespace TireHubExpress.Data
         }
 
         public DbSet<TireHubExpress.Models.Tire> Tire { get; set; }
+
+      
     }
 }
 

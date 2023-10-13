@@ -16,7 +16,7 @@ namespace TireHubExpress.Migrations
                     Type = table.Column<string>(nullable: true),
                     Material = table.Column<string>(nullable: true),
                     Durability = table.Column<string>(nullable: true),
-                    Stock = table.Column<string>(nullable: true),
+                    Stock = table.Column<int>(nullable: false),
                     Price = table.Column<decimal>(nullable: false),
                     Review = table.Column<int>(nullable: false)
                 },
