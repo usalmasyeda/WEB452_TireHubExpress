@@ -5,6 +5,7 @@ namespace TireHubExpress.Models
 {
     public class Tire
     {
+        //Forgot to add this in the beginning and was getting an error, Noted in README
         public int Id { get; set; }
 
         [Required]

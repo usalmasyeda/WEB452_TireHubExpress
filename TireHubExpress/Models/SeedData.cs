@@ -21,6 +21,10 @@ namespace TireHubExpress.Models
                 }
 
                 context.Tire.AddRange(
+
+                    //Added Product Data Information
+
+                    //Product 1
                     new Tire
                     {
                         Name = "Road Master",
@@ -32,6 +36,7 @@ namespace TireHubExpress.Models
                         Review = 4
                     },
 
+                    //Product 2
                     new Tire
                     {
                         Name = "Snow Grip",
@@ -43,6 +48,7 @@ namespace TireHubExpress.Models
                         Review = 5
                     },
 
+                    //Product 3
                     new Tire
                     {
                         Name = "Eco Tread",
@@ -54,6 +60,7 @@ namespace TireHubExpress.Models
                         Review = 4
                     },
 
+                    //Product 4
                     new Tire
                     {
                         Name = "Off-Road Beast",
@@ -65,6 +72,7 @@ namespace TireHubExpress.Models
                         Review = 4
                     },
 
+                    //Product 5
                     new Tire
                     {
                         Name = "SportXtreme",
@@ -76,6 +84,7 @@ namespace TireHubExpress.Models
                         Review = 5
                     },
 
+                    //Product 6
                     new Tire
                     {
                         Name = "City Slicker",
@@ -88,6 +97,7 @@ namespace TireHubExpress.Models
 
                     },
 
+                    //Product 7
                     new Tire
                     {
                         Name = "Rain Guard",
@@ -100,6 +110,7 @@ namespace TireHubExpress.Models
 
                     },
 
+                    //Product 8
                     new Tire
                     {
                         Name = "Classic Cruiser",
@@ -112,6 +123,7 @@ namespace TireHubExpress.Models
 
                     },
 
+                    //Product 9
                     new Tire
                     {
                         Name = "Eco Grip",
@@ -124,6 +136,7 @@ namespace TireHubExpress.Models
 
                     },
 
+                    //Product 10
                     new Tire
                     {
                         Name = "Snow Master",
@@ -136,6 +149,7 @@ namespace TireHubExpress.Models
 
                     },
 
+                    //Product 11
                     new Tire
                     {
                         Name = "Adventure Pro",
@@ -148,6 +162,7 @@ namespace TireHubExpress.Models
 
                     },
 
+                    //Product 12
                     new Tire
                     {
                         Name = "Speed Demon",

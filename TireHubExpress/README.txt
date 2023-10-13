@@ -176,6 +176,12 @@ GETTING ERRORS!!
 - Tested the pages, everything works great!
 - Updated README.txt, Committed & Push to GitHub
 
+(3:00 PM)
+- Worked more on the content of About page and Catalogue Page
+- Made an img folder, added images
+- Used Bootstrap to playa round with styling useing site.css
+- Downloaded Fonts folder and changed the font
+- Making more I have comments throughout the application
 
 
 
