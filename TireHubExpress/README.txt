@@ -1,4 +1,5 @@
-﻿2023-10-10
+﻿
+2023-10-10
 (2:22 PM)
 
 Created by: Umme Salma Syeda
@@ -102,6 +103,8 @@ Initial Migration:
 TESTING THE APP, SUCCESSFULL!
 - Commit & Push to GitHub
 
+---------------------------------------------------------------------------------------------------------------------------------
+
 (7:10 PM)
 
 - Created a SeedData Class in Models Folder
@@ -172,6 +175,8 @@ GETTING ERRORS!!
 - In the _Layout.cshtml, added the navagation links for the two new pages I created. 
 - Tested the pages, everything works great!
 - Updated README.txt, Committed & Push to GitHub
+
+
 
 
 
