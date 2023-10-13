@@ -164,6 +164,14 @@ GETTING ERRORS!!
 - Added a search by Type to the Index view
 - Testing Application, Successfull
 
+(10:15 AM)
+
+- Created two new pages in the Views > Home Folder 
+- Page About.cshtml and Catalogue.cshtml
+- Connected them to the HomeController.cs File in Controllers Folder
+- In the _Layout.cshtml, added the navagation links for the two new pages I created. 
+- Tested the pages, everything works great!
+- Updated README.txt, Committed & Push to GitHub
 
 
 

@@ -23,6 +23,16 @@ namespace TireHubExpress.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Catalogue()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
