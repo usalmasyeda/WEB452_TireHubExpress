@@ -155,6 +155,17 @@ GETTING ERRORS!!
 - Updated README.txt
 - Committed & Push to GitHub
 
+----------------------------------------------------------------------------------------------------------------------
+
+(10:00 AM)
+
+- Adding a Search function
+- Updated the Index method inside Controllers/TiresControllers.cs
+- Added a search by Type to the Index view
+- Testing Application, Successfull
+
+
+
 
 
 

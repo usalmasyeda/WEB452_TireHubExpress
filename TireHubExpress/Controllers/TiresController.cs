@@ -20,9 +20,52 @@ namespace TireHubExpress.Controllers
         }
 
         // GET: Tires
-        public async Task<IActionResult> Index()
+        /*  public async Task<IActionResult> Index()
+          {
+              return View(await _context.Tire.ToListAsync());
+          }*/
+
+        /* public async Task<IActionResult> Index(string searchString)
+         {
+             var Tires = from m in _context.Tire
+                          select m;
+
+             if (!String.IsNullOrEmpty(searchString))
+             {
+                 Tires = Tires.Where(s => s.Name.Contains(searchString));
+             }
+
+             return View(await Tires.ToListAsync());
+         }*/
+
+        // GET: Movies
+        public async Task<IActionResult> Index(string tireType, string searchString)
         {
-            return View(await _context.Tire.ToListAsync());
+            // Use LINQ to get list of genres.
+            IQueryable<string> typeQuery = from m in _context.Tire
+                                            orderby m.Type
+                                            select m.Type;
+
+            var tires = from m in _context.Tire
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                tires = tires.Where(s => s.Type.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(tireType))
+            {
+                tires = tires.Where(x => x.Type == tireType);
+            }
+
+            var tireTypeVM = new TireTypeViewModel
+            {
+                Types = new SelectList(await typeQuery.Distinct().ToListAsync()),
+                Tires = await tires.ToListAsync()
+            };
+
+            return View(tireTypeVM);
         }
 
         // GET: Tires/Details/5
