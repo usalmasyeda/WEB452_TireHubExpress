@@ -115,3 +115,46 @@ TESTING THE APP, SUCCESSFULL!
 - Updated content in Program.cs based on the product 'Tire'
 
 GETTING ERRORS!!
+- Migration is not working after updating the SeedData.cs File
+- Something is wrong with my laptop, need to use college computer
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+2023-10-13
+(9:31 AM)
+
+- Using St Clair College Computer, Clone Repo from GitHub
+- Clean and Build application
+- Using (Update-Database -Context TireHubExpressContext) to update the data to show up on the browser. 
+- Update was successfull
+- Running Application, Data was successfully shown on the table on the brower.
+- Made some adjustments in the Models > Tire.cs File > Added some validation
+
+        [Required]
+        [StringLength(60, MinimumLength = 3)]
+        public string Name { get; set; }
+
+        [Required]
+        public string Type { get; set; }
+
+        [Required]
+        public string Material { get; set; }
+
+        [Required]
+        public string  Durability { get; set; }
+
+        [Required]
+        public int Stock { get; set; }
+
+        [DataType(DataType.Currency)]
+        public decimal Price { get; set; }
+
+        [Range(1, 5)]
+        public int Review { get; set; }
+
+- Updated README.txt
+- Committed & Push to GitHub
+
+
+
+
